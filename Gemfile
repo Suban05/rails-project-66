@@ -69,11 +69,11 @@ gem 'sentry-rails'
 gem 'sentry-ruby'
 
 gem 'dotenv'
+gem 'faker'
 gem 'octokit'
 gem 'omniauth', '~> 2.1', '>= 2.1.2'
 gem 'omniauth-github', '~> 2.0', '>= 2.0.1'
 gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.2'
 gem 'slim'
 gem 'slim_lint'
-gem 'faker'gem 'slim-rails'
-
+gem 'slim-rails'
