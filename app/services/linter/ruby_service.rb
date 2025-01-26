@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'linter_service'
-
-class Linter::RubyService < LinterService
+class Linter::RubyService < Linter::LinterService
   private
 
   def bash_command = "bundle exec rubocop #{@tmp_dir_path} --format json -c .rubocop.yml"

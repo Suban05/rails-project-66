@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class LinterService
+class Linter::LinterService
   def initialize(check, tmp_dir_path)
     @check = check
     @tmp_dir_path = tmp_dir_path

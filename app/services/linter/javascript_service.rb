@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'linter_service'
-
-class Linter::JavascriptService < LinterService
+class Linter::JavascriptService < Linter::LinterService
   private
 
   def bash_command = "yarn run eslint #{@tmp_dir_path} -f json -c eslint.config.mjs"
