@@ -3,14 +3,14 @@
 module Web
   class AuthController < ApplicationController
     def callback
-      return redirect_to root_path, notice: t('.already_signed_in') if signed_in?
+      return redirect_to root_path if signed_in?
 
       auth_params = request.env['omniauth.auth']
       user = find_or_initialize_user(auth_params)
 
       if user.save
         sign_in user
-        redirect_to root_path, notice: t('.signed_in')
+        redirect_to root_path, notice: t('flash.auth.sign_in')
       else
         redirect_to root_path, alert: user.errors.full_messages.to_sentence
       end
@@ -18,7 +18,7 @@ module Web
 
     def logout
       sign_out
-      redirect_to root_path, notice: t('.signed_out')
+      redirect_to root_path, notice: t('flash.auth.sign_out')
     end
 
     private
