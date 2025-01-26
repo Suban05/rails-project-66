@@ -2,8 +2,12 @@
 
 require 'test_helper'
 
-class Web::HomeControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+module Web
+  class HomeControllerTest < ActionDispatch::IntegrationTest
+    test 'gets show' do
+      get root_path
+
+      assert_response :success
+    end
+  end
 end
