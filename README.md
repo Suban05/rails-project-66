@@ -23,7 +23,3 @@ make start
 ```
 make test
 ```
-
-# Demo
-
-https://rails-project-66-1uqm.onrender.com
