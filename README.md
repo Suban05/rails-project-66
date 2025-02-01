@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/Suban05/quality-analyzer/workflows/CI/badge.svg)](https://github.com/Suban05/rails-project-66/actions)
+[![Build Status](https://github.com/Suban05/quality-analyzer/workflows/CI/badge.svg)](https://github.com/Suban05/quality-analyzer/actions)
 
 # Quality Analyzer
 
